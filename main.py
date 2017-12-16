@@ -37,7 +37,7 @@ def calc_gpu_fraction(fraction_string):
   idx, num = fraction_string.split('/')
   idx, num = float(idx), float(num)
 
-  fraction = 1 / (num - idx + 1)
+  fraction = idx / num #1 / (num - idx + 1)
   print(" [*] GPU : %.4f" % fraction)
   return fraction
 
